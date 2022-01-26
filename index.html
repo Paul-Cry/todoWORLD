@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>to.do</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                t<span>o.d</span>o
+            </div>
+            <div class="btn nav-btn modal-trigger" data-modal-id="new-task-modal">
+               <span>+</span> Добавление задачи
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="todo-list">
+
+        </div>
+    </div>
+
+    <div class="modal" onclick="console.log(this)" id="new-task-modal">
+        <div class="modal-wrapper">
+            <div class="modal-title">
+                Добавление новой задачи
+            </div>
+
+            <div class="modal-content">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <div class="modal-actions">
+                <div class="btn btn-filled modal-trigger" data-modal-id="new-task-modal">
+                    Добавить задачу
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

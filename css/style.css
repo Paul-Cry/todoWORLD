@@ -1,0 +1,104 @@
+:root {
+    --bg-color : #1a1826;
+    --bg-light-color : #333241;
+    --accent-color: #db5555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Albertus Medium", sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: var(--bg-color);
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--bg-light-color);
+    border: 1px solid transparent;
+    color: white;
+    border-radius: .7rem;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: .3s;
+}
+.btn:hover {
+    color: white;
+    box-shadow: inset 0 0 8px -3px var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.btn-filled {
+    background: var(--accent-color);
+}
+
+.btn-filled:hover {
+    box-shadow: 0 0 8px -1px var(--accent-color);
+}
+
+.btn span {
+    color: var(--accent-color);
+    transition: .3s;
+}
+.btn:hover span {
+    text-shadow: 0 0 5px var(--accent-color);
+}
+.border-r {
+    border-radius: 0.7rem;
+}
+
+nav {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-logo span {
+    transition: .3s;
+    color: var(--accent-color);
+}
+
+.nav-logo:hover span {
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+.nav-logo:hover  {
+    text-shadow: 0 0 5px white
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+
+}
+.modal.active {
+    display: flex;
+}
+.modal-wrapper {
+    min-width: 300px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: var(--bg-light-color);
+    border-radius: 0.7rem;
+}
+
